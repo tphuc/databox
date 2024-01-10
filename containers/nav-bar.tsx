@@ -51,8 +51,8 @@ export function NavBar(props): JSX.Element {
                 </SheetContent>
               </Sheet>
               <div className="flex h-full  items-center">
-                <h1 className="text-2xl">LOGO</h1>
-                {/* <Image alt='' src={clientlogo} width={100} className="w-[100px] h-auto"></Image> */}
+               
+                <Image alt='' src={'/logo.png'} width={100} className="w-[100px] h-auto"></Image>
               </div>
               <div className="hidden md:flex h-full items-center">
                 <h1 className="text-md text-center text-secondary-foreground">{format(new Date(), 'Pp')}</h1>

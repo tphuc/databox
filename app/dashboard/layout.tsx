@@ -12,17 +12,17 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
     return <div className="flex min-h-screen bg-gradient-to-r from-gradientOne to-gradientTwo flex-col space-y-0 ">
-         <div className="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
-                    <div className="w-[80vw] flex-none flex justify-end">
-                        
-                    </div>
-                </div>
-        <header className="sticky backdrop-blur-lg w-full top-0  z-40 bg-background/90 border-b border-border">
-            <div className="flex items-center max-w-screen-2xl mx-auto w-full justify-between py-3 md:py-4">
-                <h1 className="text-2xl">LOGO</h1>
+        <div className="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
+            <div className="w-[80vw] flex-none flex justify-end">
+
+            </div>
+        </div>
+        <header className="sticky backdrop-blur-lg w-full top-0 px-4 z-40 bg-background/80 border-b border-border">
+            <div className="flex items-center w-full justify-between py-3 px-4 md:py-4">
+                <Image alt='' src={'/logo.png'} width={120} height={100} className="w-[120px] h-auto"></Image>
             </div>
         </header>
-        <div className="flex flex-col md:grid flex-1 gap-0 md:grid-cols-[260px_1fr] pt-0 md:pt-6">
+        <div className="flex flex-col md:grid px-4 flex-1 gap-0 md:grid-cols-[260px_1fr] pt-0 md:pt-6">
 
             <div className="relative border-gray-200 px-2 sm:w-full md:w-[260px] flex-col md:flex">
                 <Sidebar items={
@@ -88,7 +88,7 @@ export default function Layout({ children }: LayoutProps) {
                 } />
             </div>
 
-            <main className="flex py-10 relative w-full flex-1 flex-col overflow-hidden ">
+            <main className="flex pt-1 pb-10 relative w-full flex-1 flex-col overflow-hidden ">
                 {children}
             </main>
 
