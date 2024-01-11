@@ -22,7 +22,7 @@ export default function CandidateDecline() {
     return (
         
 
-            <Card className="dark:bg-gray-900/50 dark:hover:bg-gray-900/80" key={data.category}>
+            <Card  key={data.category}>
                 <Title>{data.category}</Title>
                 <Flex justifyContent="start" alignItems="baseline" className="space-x-2">
                     <Metric>{data.stat}</Metric>

@@ -88,7 +88,7 @@ export default function Layout({ children }: LayoutProps) {
                 } />
             </div>
 
-            <main className="flex pt-1 pb-10 relative w-full flex-1 flex-col overflow-hidden ">
+            <main className="flex pt-1 pb-10 min-h-screen relative w-full flex-1 flex-col overflow-hidden ">
                 {children}
             </main>
 
