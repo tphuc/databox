@@ -1,8 +1,18 @@
 
 'use client'
 
+import dynamic from "next/dynamic";
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+
+const HorizontalModule = dynamic(
+    () => import('react-apexcharts').then((mod) => mod.default),
+    {
+      ssr: false,
+      suspense: true,
+      loading: () => <p>Loading...</p>
+    }
+  )
 class MyChartComponent extends Component {
     constructor(props) {
         super(props);
