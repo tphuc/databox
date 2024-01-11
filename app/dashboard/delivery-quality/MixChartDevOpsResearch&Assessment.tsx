@@ -3,9 +3,9 @@
 
 import dynamic from "next/dynamic";
 import React, { Component } from "react";
-import Chart from "react-apexcharts";
+// import Chart from "react-apexcharts";
 
-const HorizontalModule = dynamic(
+const Chart = dynamic(
     () => import('react-apexcharts').then((mod) => mod.default),
     {
       ssr: false,
